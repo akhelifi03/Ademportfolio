@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adem Khelifi - Data Analytics Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes gradient {
+      0%, 100% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+    }
+    .animate-gradient {
+      background-size: 200% 200%;
+      animation: gradient 3s ease infinite;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in {
+      animation: fadeIn 1s ease-out;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    .animate-bounce {
+      animation: bounce 2s ease-in-out infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    .animate-pulse {
+      animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+    }
+    .hover-scale {
+      transition: transform 0.3s ease;
+    }
+    .hover-scale:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-900 text-white min-h-screen">
+  
+  <!-- Animated Background Blobs -->
+  <div class="fixed inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute w-96 h-96 bg-blue-500/10 rounded-full blur-3xl -top-48 -left-48 animate-pulse"></div>
+    <div class="absolute w-96 h-96 bg-purple-500/10 rounded-full blur-3xl top-1/2 -right-48 animate-pulse" style="animation-delay: 1s;"></div>
+    <div class="absolute w-96 h-96 bg-cyan-500/10 rounded-full blur-3xl -bottom-48 left-1/2 animate-pulse" style="animation-delay: 0.5s;"></div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="relative min-h-screen flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto text-center relative z-10">
+      <div class="mb-8 fade-in">
+        <div class="relative inline-block">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full blur-xl opacity-50 animate-pulse"></div>
+          <div class="relative w-48 h-48 mx-auto rounded-full border-4 border-white/20 overflow-hidden backdrop-blur-sm bg-gradient-to-br from-blue-500/20 to-purple-500/20"></div>
+        </div>
+      </div>
+      
+      <h1 class="text-6xl sm:text-8xl font-bold mb-6 bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 text-transparent bg-clip-text animate-gradient">
+        Adem Khelifi
+      </h1>
+      
+      <p class="text-2xl sm:text-3xl mb-4 text-blue-200 font-light">
+        Data Analytics & Engineering Specialist
+      </p>
+      
+      <div class="flex items-center justify-center gap-3 text-slate-300 mb-8 flex-wrap">
+        <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
+          📍 Lexington, VA
+        </span>
+        <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
+          🎓 Class of 2027
+        </span>
+        <span class="flex items-center gap-2 bg-white/5 px-4 py-2 rounded-full backdrop-blur-sm border border-white/10">
+          🏆 3.8 GPA
+        </span>
+      </div>
+
+      <div class="flex gap-4 justify-center mb-12 flex-wrap">
+        <a href="mailto:akhelifi@mail.wlu.edu" class="group relative overflow-hidden bg-gradient-to-r from-blue-500 to-purple-500 px-8 py-3 rounded-full font-semibold transition-all hover:scale-105 hover:shadow-lg hover:shadow-blue-500/50">
+          <span class="relative z-10 flex items-center gap-2">
+            ✉️ Contact Me
+          </span>
+        </a>
+        <button class="bg-white/10 backdrop-blur-sm px-8 py-3 rounded-full font-semibold border border-white/20 transition-all hover:bg-white/20 hover:scale-105">
+          View Resume
+        </button>
+      </div>
+
+      <div class="animate-bounce mt-16">
+        <svg class="w-8 h-8 mx-auto text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-blue-400 to-purple-400 text-transparent bg-clip-text">
+        About Me
+      </h2>
+      
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-blue-500/50 transition-all hover-scale">
+          <div class="text-5xl mb-4">🎓</div>
+          <h3 class="text-2xl font-bold mb-4">Education</h3>
+          <p class="text-lg mb-2 font-semibold">Washington and Lee University</p>
+          <p class="text-blue-300 mb-4">B.S. in Mathematics | CS & Data Science Minors</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-blue-500/20 px-3 py-1 rounded-full text-sm">Business Analytics</span>
+            <span class="bg-purple-500/20 px-3 py-1 rounded-full text-sm">Data Visualization</span>
+            <span class="bg-cyan-500/20 px-3 py-1 rounded-full text-sm">Software Development</span>
+          </div>
+        </div>
+
+        <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-purple-500/50 transition-all hover-scale">
+          <div class="text-5xl mb-4">🌍</div>
+          <h3 class="text-2xl font-bold mb-4">International Background</h3>
+          <p class="text-slate-300 mb-4">
+            Multilingual professional with fluency in English, Arabic, and French, plus intermediate Spanish. 
+            Recipient of KL-YES Scholarship and International Student Grant.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-green-500/20 px-3 py-1 rounded-full text-sm">English</span>
+            <span class="bg-green-500/20 px-3 py-1 rounded-full text-sm">Arabic</span>
+            <span class="bg-green-500/20 px-3 py-1 rounded-full text-sm">French</span>
+            <span class="bg-yellow-500/20 px-3 py-1 rounded-full text-sm">Spanish</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-cyan-400 to-blue-400 text-transparent bg-clip-text">
+        Technical Skills
+      </h2>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div class="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover-scale hover:border-cyan-500/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-cyan-300">Data Analysis</h3>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Python</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">SQL</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Excel</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Alteryx</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover-scale hover:border-cyan-500/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-cyan-300">Visualization</h3>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Tableau</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Power BI</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover-scale hover:border-cyan-500/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-cyan-300">Development</h3>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Flask</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">APIs</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Transformers</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-gradient-to-br from-white/5 to-white/10 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover-scale hover:border-cyan-500/50 transition-all">
+          <h3 class="text-xl font-bold mb-4 text-cyan-300">Languages</h3>
+          <div class="space-y-2">
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">English</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Arabic</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">French</span>
+            </div>
+            <div class="flex items-center gap-2">
+              <div class="w-2 h-2 bg-cyan-400 rounded-full"></div>
+              <span class="text-slate-200">Spanish</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-purple-400 to-pink-400 text-transparent bg-clip-text">
+        Experience
+      </h2>
+      
+      <div class="space-y-8">
+        <!-- Experience 1 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-white/30 transition-all">
+          <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+          
+          <div class="relative">
+            <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Data Analyst</h3>
+                <p class="text-xl text-blue-300">Bizerta Top Travel</p>
+                <p class="text-slate-400 flex items-center gap-2 mt-1">
+                  📍 Bizerta, Tunisia
+                </p>
+              </div>
+              <span class="bg-white/10 px-4 py-2 rounded-full text-sm">
+                June 2025 – August 2025
+              </span>
+            </div>
+            
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Boosted campaign response rates by 25% through SQL and Alteryx analysis</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Increased revenue by 10% with Tableau-driven pricing strategies</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Reduced reporting time by 20% with automated workflows</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Enhanced customer retention using Power BI visualizations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 2 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-white/30 transition-all">
+          <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-pink-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+          
+          <div class="relative">
+            <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Research Assistant</h3>
+                <p class="text-xl text-blue-300">Washington and Lee University</p>
+                <p class="text-slate-400 flex items-center gap-2 mt-1">
+                  📍 Lexington, VA
+                </p>
+              </div>
+              <span class="bg-white/10 px-4 py-2 rounded-full text-sm">
+                September 2024 – June 2025
+              </span>
+            </div>
+            
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Analyzed student survey data using regression and hypothesis testing</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Identified significant predictors of major selection</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Cleaned and processed data using Alteryx tools</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Experience 3 -->
+        <div class="group relative bg-white/5 backdrop-blur-lg rounded-2xl p-8 border border-white/10 hover:border-white/30 transition-all">
+          <div class="absolute inset-0 bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-10 rounded-2xl transition-opacity"></div>
+          
+          <div class="relative">
+            <div class="flex flex-wrap justify-between items-start gap-4 mb-4">
+              <div>
+                <h3 class="text-2xl font-bold mb-2">Summer Research Scholar</h3>
+                <p class="text-xl text-blue-300">Washington and Lee University</p>
+                <p class="text-slate-400 flex items-center gap-2 mt-1">
+                  📍 Lexington, VA
+                </p>
+              </div>
+              <span class="bg-white/10 px-4 py-2 rounded-full text-sm">
+                June 2024 – August 2024
+              </span>
+            </div>
+            
+            <ul class="space-y-2">
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Built language learning app with fine-tuned LLM</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>Deployed model using Flask and Vercel</span>
+              </li>
+              <li class="flex items-start gap-3 text-slate-300">
+                <span class="text-blue-400 mt-1">▹</span>
+                <span>88% student confidence in applying practical tech skills</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="relative py-20 px-4 sm:px-6 lg:px-8 bg-black/20">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-5xl font-bold mb-12 text-center bg-gradient-to-r from-orange-400 to-red-400 text-transparent bg-clip-text">
+        Featured Projects
+      </h2>
+      
+      <div class="grid md:grid-cols-3 gap-6">
+        <!-- Project 1 -->
+        <div class="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-orange-500/50 transition-all hover-scale">
+          <div class="text-5xl mb-4">📊</div>
+          <h3 class="text-xl font-bold mb-3">Customer Analytics Dashboard</h3>
+          <p class="text-slate-300 mb-4 text-sm">Analyzed 5 years of booking data to identify high-engagement customer segments</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">SQL</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Alteryx</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Tableau</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Power BI</span>
+          </div>
+          <p class="text-green-400 font-semibold text-sm">
+            ↗ 25% increase in campaign response rates
+          </p>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-orange-500/50 transition-all hover-scale">
+          <div class="text-5xl mb-4">🤖</div>
+          <h3 class="text-xl font-bold mb-3">Language Learning AI</h3>
+          <p class="text-slate-300 mb-4 text-sm">Fine-tuned LLM chatbot for university students with API integrations</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Python</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Transformers</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Flask</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Vercel</span>
+          </div>
+          <p class="text-green-400 font-semibold text-sm">
+            ↗ 88% student confidence rate
+          </p>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="group bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10 hover:border-orange-500/50 transition-all hover-scale">
+          <div class="text-5xl mb-4">🎯</div>
+          <h3 class="text-xl font-bold mb-3">Student Major Selection Analysis</h3>
+          <p class="text-slate-300 mb-4 text-sm">Statistical analysis identifying key factors in college major choices</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Alteryx</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Regression Analysis</span>
+            <span class="bg-orange-500/20 px-2 py-1 rounded text-xs">Hypothesis Testing</span>
+          </div>
+          <p class="text-green-400 font-semibold text-sm">
+            ↗ Identified significant predictors
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="relative py-12 px-4 sm:px-6 lg:px-8 border-t border-white/10">
+    <div class="max-w-6xl mx-auto text-center">
+      <div class="flex justify-center gap-6 mb-6">
+        <a href="mailto:akhelifi@mail.wlu.edu" class="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-all hover-scale">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+        </a>
+        <a href="#" class="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-all hover-scale">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="#" class="p-3 bg-white/5 rounded-full hover:bg-white/10 transition-all hover-scale">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+          </svg>
+        </a>
+      </div>
+      <p class="text-slate-400">
+        © 2024 Adem Khelifi. Data Analytics & Engineering Specialist.
+      </p>
+      <p class="text-slate-500 text-sm mt-2">
+        540.290.5283 • akhelifi@mail.wlu.edu
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
